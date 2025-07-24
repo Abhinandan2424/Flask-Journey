@@ -4,6 +4,9 @@ This repository contains my step-by-step learning journey of the Flask framework
 
 ---
 
+## install flask -
+   - pip install flask 
+
 ## 📁 Folder Structure and Contents
 
 ### 1️. 01_hello_world
@@ -26,7 +29,7 @@ This repository contains my step-by-step learning journey of the Flask framework
 ### 3️. 03_HTTP_methods
 - Description: Shows how to handle `GET` and `POST` requests in Flask.
 - Concepts Covered:
-  - `methods=["GET", "POST"]
+  - methods=["GET", "POST"]
 
 
 ---
