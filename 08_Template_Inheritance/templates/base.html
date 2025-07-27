@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%}My Website {% endblock%}</title>
+  </head>
+  <body>
+    <div style="display: flex; min-height: 100vh; flex-direction: column">
+      <header>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <h1>Welcome to my Website</h1>
+          <nav>
+            <a href="/">Home</a> | <a href="/about">About</a> |
+            <a href="/contact">Contact</a> |
+          </nav>
+        </div>
+      </header>
+      <main style="flex: 1">{% block content %} {% endblock %}</main>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          color: white;
+          background-color: black;
+        "
+      >
+        <footer>
+          <p>&copy; 2025 Made by Abhinandan</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
