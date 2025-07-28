@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Feedback Site {% endblock %}</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+
+        }
+        footer,header {background: #333; padding: 5px; color: white;}
+        nav a { color: white; text-decoration: none;margin-right: 5px;}
+        main{
+            background: white; padding: 10px; margin-top: 10px;flex: 1;
+         }
+</style>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; min-height: 100vh;">
+        <header>
+            <div 
+                style="display:flex; justify-content: space-between; align-items: center;"
+            >
+                <h1>Feedback Site</h1>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/feedback">Feedback</a>
+                   
+            </nav>
+            </div>
+            
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <div style="display: flex; justify-content: center;">
+                <p>&copy;2025 made by Abhinandan</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
